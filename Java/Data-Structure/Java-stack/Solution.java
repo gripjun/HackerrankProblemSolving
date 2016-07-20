@@ -6,11 +6,7 @@ import java.util.Scanner;
 class Solution {
 	
 	static Deque<Character> stack;
-	
-	public Solution() {
-		stack = new ArrayDeque<Character>();
-	}
-	
+
 	public static boolean isBalanced(String exp) {
 		final int len = exp.length();
 		boolean failed = false;
@@ -48,7 +44,7 @@ class Solution {
 	public static void main(String[] argh) {
 
 		Scanner in = new Scanner(System.in);
-		
+		stack = new ArrayDeque<Character>();
 		
 		while(in.hasNextLine()) {
 			String exp = in.nextLine();
